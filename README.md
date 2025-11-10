@@ -138,5 +138,10 @@ If you use this codebase, please cite:
 
 ## Acknowledgments
 
-This repository extends the Asteroid speech enhancement toolkit with additional perceptual loss functions and evaluation tools.
-We gratefully acknowledge the support of Université de Lorraine, CNRS, and the Multispeech team at Inria Nancy.
+This repository extends the **Asteroid** speech enhancement toolkit with additional perceptual loss functions and evaluation tools.  
+
+This research was carried out with the support of the **French National Research Agency (ANR)** as part of the **REFINED project** — *REal-time artiFicial INtelligence for hEaring aiDs* (ANR-21-CE19-0043).  
+
+Experiments presented in this work were conducted on the **Grid’5000 testbed**, supported by a scientific interest group hosted by **Inria** and including **CNRS**, **RENATER**, and several **universities and research organizations**.  
+
+We gratefully acknowledge the support of **Université de Lorraine**, **CNRS**, and the **Multispeech team at Inria Nancy**.
