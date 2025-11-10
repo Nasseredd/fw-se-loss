@@ -4,7 +4,7 @@ This repository provides the experimental framework and code used in the paper:
 
 > **Frequency-Weighted Training Losses for Phoneme-Level DNN-based Speech Enhancement**  
 > *Nasser-Eddine Monir, Paul Magron, Romain Serizel*  
-> [arXiv:2506.18714](https://doi.org/10.48550/arXiv.2506.18714), submitted to the 26th IEEE International Workshop on Multimedia Signal Processing (MMSP 2025).
+> [arXiv:2506.18714](https://doi.org/10.48550/arXiv.2506.18714), submitted to the 26th IEEE International Workshop on Multimedia Signal Processing (MMSP),  2025.
 
 ---
 
@@ -95,7 +95,7 @@ bash scripts/train/train_fasnet.sh XP1 neg_sisdr gres 2 48 1024 256 mel 18 speec
 This will start a job that:
 * Loads the dataset
 * Trains with the selected loss and frequency weighting strategy
-* Logs results in experiments/<EXPERIMENT_TAG>/
+* Logs results in `experiments/<EXPERIMENT_TAG>/`
 
 Evaluation
 
@@ -113,7 +113,7 @@ bash scripts/evaluate/evaluate_fasnet_job.sh <EXPERIMENT_TAG> <STAGE> <WALLTIME>
 
 ## Implemented Losses
 
-Implemented in external_repo/asteroid/losses/sdr_xp.py: Each loss can be configured by scale (mel, critical, or linear), weighting strategy, and STFT parameters (n_fft, hop_length, n_bins).
+Implemented in `external_repo/asteroid/losses/sdr_xp.py`: Each loss can be configured by scale (mel, critical, or linear), weighting strategy, and STFT parameters (`n_fft`, `hop_length`, `n_bins`).
 
 ## Evaluation Metrics
 
@@ -127,11 +127,12 @@ Computed in src/auditus/evaluation.py and used in `custom_inference.py`:
 If you use this codebase, please cite:
 
 ```
-@article{Monir2025FreqWeightedSE,
+@inproceedings{Monir2025FreqWeightedSE,
   title={Frequency-Weighted Training Losses for Phoneme-Level DNN-based Speech Enhancement},
   author={Nasser-Eddine Monir and Paul Magron and Romain Serizel},
-  journal={arXiv preprint arXiv:2506.18714},
-  year={2025}
+  booktitle={Proceedings of the 26th IEEE International Workshop on Multimedia Signal Processing (MMSP)},
+  year={2025},
+  doi={10.48550/arXiv.2506.18714}
 }
 ```
 
